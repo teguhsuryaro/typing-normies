@@ -4,29 +4,29 @@
 ========================================= */
 :root {
     /* Backgrounds */
-    --bg-main: #1a1a1a;
-    --bg-container: #2d2d2d;
-    --bg-stat-box: #3d3d3d;
-    --bg-quote-display: #252525;
-    --bg-input: #333333;
+    --bg-main: #2e2a27;
+    --bg-container: #3c3836;
+    --bg-stat-box: #32302f;
+    --bg-quote-display: #282828;
+    --bg-input: #32302f;
     
     /* Text Colors */
-    --text-main: #ffffff;
-    --text-dim: #666666;
+    --text-main: #ebdbb2;
+    --text-dim: #928374;
     
-    /* Accents & Buttons */
-    --accent-primary: #ffd700;
-    --accent-hover: #ffcc00;
+    /* Accents (Oranye Muted) */
+    --accent-primary: #fabd2f;
+    --accent-hover: #fe8019;
     
     /* States & Feedback */
-    --color-correct: #4caf50;
-    --color-error: #f44336;
-    --bg-active-word: #555555;
-    --border-input: #555555;
+    --color-correct: #b8bb26; 
+    --color-error: #fb4934;   
+    --bg-active-word: #504945;
+    --border-input: #665c54;
     
     /* Shadows */
-    --shadow-container: rgba(0, 0, 0, 0.5);
-    --shadow-finished: rgba(76, 175, 80, 0.5);
+    --shadow-container: rgba(0, 0, 0, 0.4);
+    --shadow-finished: rgba(184, 187, 38, 0.2);
 }
 
 /* =========================================
@@ -80,11 +80,12 @@ h1 {
 
 /* Warna hijau untuk hasil akhir */
 .stat-box.finished {
-    background-color: var(--color-correct);
-    color: var(--text-main);
+    background-color: rgba(76, 175, 80, 0.15);
+    color: var(--color-correct);
+    border: 2px solid var(--color-correct);
     transform: scale(1.05);
-    transition: all 0.3s ease;
-    box-shadow: 0 0 15px var(--shadow-finished);
+    transition: all 1s ease;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.2);
 }
 
 /* Tampilan Teks */
